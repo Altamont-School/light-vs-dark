@@ -1,0 +1,41 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&family=Source+Sans+Pro:wght@200;400;900&display=swap");
+
+/* Variables */
+:root {
+  --light: url(light.png);
+  --dark: url(dark.jpg);
+  --bg: var(--light);
+
+  --foreground: var(--white);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Poller One", cursive;
+}
+
+.background {
+  background-image: var(--bg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  transition: ease-in-out 0.2s;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: 800;
+}
+
+input:checked,
+input:checked + * {
+  --bg: var(--dark);
+}
